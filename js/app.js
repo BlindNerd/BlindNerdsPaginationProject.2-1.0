@@ -56,8 +56,8 @@ function addLinks (students) {
             let search = $('#search').val().toLowerCase(); // grab the value of the search box an make it lower case
 
         for ( i = 0; i < numberOfStudents; i++ ) {
-            studentName = studentName[i].textContent; // loop through stduents Name
-            studentEmail = studentEmail[i].textContent;
+            studentName = studentName[i].val(); // loop through stduents Name
+            studentEmail = studentEmail[i].val();
 
           if ( studentName == search || studentEmail == search ) { // results of search
             matchedStudents.push(students[i]);
